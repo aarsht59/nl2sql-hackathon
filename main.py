@@ -14,3 +14,8 @@ for col in schema:
 print("\n👥 Total Customers:")
 result = run_query("SELECT COUNT(*) FROM Customer;")
 print(result)
+def get_user_question():
+    question = input("\n❓ Ask your question: ")
+    return question
+question = get_user_question()
+print("\n🧠 User Question:", question)
